@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-html"
+  ],
+  "rules": {
+    "selector-class-pattern": [
+      "^(?:(?:o|c|u|t|s|is|has|_|js|qa)-)?[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*(?:__[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:--[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*)?(?:\\[.+\\])?$",
+      {
+        "message": "Class names should match the SUIT CSS naming convention, [works for hyphenated_BEM](https://github.com/bjankord/stylelint-config-sass-guidelines/issues/20#issuecomment-349972873)."
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["deep"]
+      }
+    ],
+    "function-no-unknown":[
+      true,
+      {
+        "ignoreFunctions":["v-bind"]
+      }
+    ]
+  }
+}
