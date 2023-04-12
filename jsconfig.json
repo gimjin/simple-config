@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "esnext",
+    "module": "commonjs", // 如果设置 exnext vscode 自动跳转会失效
     "target": "esnext",
     "baseUrl": ".",
     "paths": {
