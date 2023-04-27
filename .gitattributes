@@ -1,1 +1,11 @@
+# lf normalization
 * text eol=lf
+
+# graphics
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg binary
