@@ -1,0 +1,12 @@
+{
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ecmaVersion": "latest"
+  },
+  "extends": [
+    "plugin:@stylistic/recommended-extends", // 官方出品，比 eslint-config-standard 好用
+    "plugin:vue/recommended"
+  ]
+}
