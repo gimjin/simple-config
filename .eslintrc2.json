@@ -6,7 +6,8 @@
       "ecmaVersion": "latest"
   },
   "extends": [
-    "plugin:@stylistic/recommended-extends", // 官方出品，比 eslint-config-standard 好用
+    "eslint:recommended",
+    "plugin:@stylistic/recommended-extends",
     "plugin:vue/recommended"
   ]
 }
