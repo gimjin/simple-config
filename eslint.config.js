@@ -5,10 +5,7 @@ import json from 'eslint-plugin-json'
 export default [
   ...pluginVue.configs['flat/recommended'],
   stylistic.configs['recommended-flat'],
-  {
-    files: ['**/*.json'],
-    ...json.configs['recommended'],
-  },
+  json.configs['recommended'],
   {
     ignores: ['dist/*'],
   },
