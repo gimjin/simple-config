@@ -3,7 +3,7 @@ import stylistic from '@stylistic/eslint-plugin'
 
 export default [
   ...pluginVue.configs['flat/recommended'],
-  stylistic.configs['recommended-flat'],
+  stylistic.configs.recommended,
   {
     ignores: ['dist/*'],
   },
