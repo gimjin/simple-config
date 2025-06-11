@@ -1,1 +1,2 @@
 cursor 输入框中输入 "/Generate Cursor Rules" 就可以基于当前工程创建 .mdc 文件
+有写 pnpm 等安装包命令的地方,description 表明安装依赖包的时候读取 mdc
