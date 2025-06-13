@@ -13,5 +13,5 @@
     "typescriptreact",
     "vue"
   ],
-  "stylelint.validate": ["css", "scss", "less", "vue"]
+  "stylelint.validate": ["css", "scss", "vue"]
 }
