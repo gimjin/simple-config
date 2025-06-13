@@ -4,11 +4,8 @@ import pluginPrettier from 'eslint-plugin-prettier'
 import configPrettier from 'eslint-config-prettier'
 
 export default [
-  // 基础 JavaScript 规则
   js.configs.recommended,
-  // Vue 推荐规则
   ...pluginVue.configs['flat/recommended'],
-  // Prettier 配置
   configPrettier,
   {
     plugins: {
@@ -21,7 +18,6 @@ export default [
       'dist/**/*',
       'node_modules/**/*',
       '**/*.min.css',
-      'build/**/*',
       '.git/**/*',
     ],
   },
