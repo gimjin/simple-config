@@ -2,6 +2,7 @@ import js from '@eslint/js'
 import pluginVue from 'eslint-plugin-vue'
 import pluginPrettier from 'eslint-plugin-prettier'
 import configPrettier from 'eslint-config-prettier'
+import globals from 'globals'
 
 export default [
   js.configs.recommended,
@@ -14,11 +15,12 @@ export default [
     rules: {
       'prettier/prettier': 'error',
     },
-    ignores: [
-      'dist/**/*',
-      'node_modules/**/*',
-      '**/*.min.css',
-      '.git/**/*',
-    ],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.es2024,
+      },
+    },
+    ignores: ['dist/**/*'],
   },
 ]
